@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 require("dotenv").config();
 
 const userRoutes = require('./routes/userRoutes');
@@ -8,7 +8,8 @@ const userRoutes = require('./routes/userRoutes');
 // app
 const app = express();
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
+app.use(express.json());
 
 // db
 mongoose
