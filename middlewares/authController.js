@@ -6,16 +6,18 @@ const jwt = require('jsonwebtoken');
 
 const getUsers = async (req, res, next) => {
 
-    let users;
-    try {
-        users = await User.find({}, '-password');
-    } catch (err) {
+    // let users;
+  //   try {
+  //       users = await User.find({}, '-password');
+  //   } catch (err) {
        
-  }
+  // }
 
-    res
-    .status(201)
-    .json({ users });
+  //   res
+  //   .status(201)
+  //   .json({ users });
+  res.status(200).json({ name: 'john' });
+
 };
 
 const signup = async (req, res, next) => {
